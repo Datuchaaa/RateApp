@@ -1,0 +1,117 @@
+.home-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #131518;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .rate-app {
+    text-align: left;
+    justify-content: space-around;
+    padding: 32px;
+    height: 416px;
+    width: 412px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background: radial-gradient(
+      98.96% 98.96% at 50% 0%,
+      #232a34 0%,
+      #181e27 100%
+    );
+    .star-wrapper {
+      height: 48px;
+      width: 48px;
+      left: 32px;
+      top: 32px;
+      border-radius: 0px;
+      background-color: #262e38;
+      border-radius: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      .fas {
+        color: #fc7614;
+      }
+    }
+    h1 {
+      color: #ffff;
+    }
+    p {
+      color: #969fad;
+    }
+    .numbers {
+      display: flex;
+      width: 95%;
+      justify-content: space-around;
+      .number {
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        color: #7c8798;
+        font-weight: 700;
+        font-size: 16px;
+        height: 48px;
+        width: 48px;
+        border-radius: 0px;
+        background-color: #262e38;
+        border-radius: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .number:hover {
+        background-color: #fc7614;
+        color: #ffff;
+      }
+    }
+    .sub-btn {
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      width: 92%;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffff;
+      background-color: #fc7614;
+      border: none;
+      height: 45px;
+      border-radius: 22.5px;
+    }
+    .sub-btn:hover {
+      background-color: #ffff;
+      color: #fc7614;
+    }
+    .thanks-wrapepr {
+      h2 {
+        margin: 0;
+      }
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      .thenks-image {
+        width: 162px;
+        height: 108px;
+      }
+      .rate-info {
+        p {
+          color: #fc7614;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 32px;
+        width: 193px;
+        border-radius: 22.5px;
+        background: #262e38;
+      }
+    }
+    h2 {
+      color: #ffff;
+    }
+  }
+}
