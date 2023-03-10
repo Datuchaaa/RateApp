@@ -6,7 +6,11 @@ const RateApp = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [inputValue, setInputValue] = useState(0);
   const [clicked, setClicked] = useState(false);
-  const style = clicked ? { backgroundColor: "#7C8798", color: "black" } : {};
+  const style = (num) => {
+    return clicked === num
+      ? { backgroundColor: "#7C8798", color: "black" }
+      : {};
+  };
 
   const handleSubmit = () => {
     setIsSubmitted(true);
@@ -14,7 +18,7 @@ const RateApp = () => {
   const handleClickNumber = (number) => {
     console.log("click", { number });
     setInputValue(number);
-    setClicked(!clicked);
+    setClicked(number);
   };
 
   return (
@@ -33,8 +37,7 @@ const RateApp = () => {
             <div className="numbers" value={inputValue}>
               {[1, 2, 3, 4, 5].map((number) => (
                 <div
-                  // onChange={({ target }) => setInputValue(target.style)}
-                  style={style}
+                  style={style(number)}
                   className="number"
                   key={number}
                   onClick={() => handleClickNumber(number)}
